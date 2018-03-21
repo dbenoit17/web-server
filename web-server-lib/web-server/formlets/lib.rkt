@@ -78,7 +78,7 @@
      #:declare range (expr/c #'contract?
                              #:name "range contract argument")
      #'(formlet/c** (-> listof-binding
-                        (values (coerce-contract 'formlet/c range.c) ...)))]
+                        (values (coerce-contract 'formlet/c range #;.c) ...)))]
     [name:id
      #`(contract
         (-> contract? (... ...) contract?)
